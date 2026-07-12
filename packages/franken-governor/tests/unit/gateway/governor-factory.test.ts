@@ -2,6 +2,7 @@ import { describe, expect, it, vi } from 'vitest';
 import { BudgetTrigger } from '../../../src/triggers/budget-trigger.js';
 import { SkillTrigger } from '../../../src/triggers/skill-trigger.js';
 import { createGovernor } from '../../../src/gateway/governor-factory.js';
+import { ApprovalConfigurationError } from '../../../src/errors/index.js';
 import type { ReadlineAdapter } from '../../../src/channels/cli-channel.js';
 import type { EpisodicTraceRecord, GovernorMemoryPort } from '../../../src/audit/governor-memory-port.js';
 import type { RationaleBlock } from '@franken/types';
@@ -128,5 +129,16 @@ describe('createGovernor', () => {
     expect(result).toEqual({ verdict: 'approved' });
     expect(readline.question).not.toHaveBeenCalled();
     expect(memoryPort.recordDecision).not.toHaveBeenCalled();
+  });
+
+  it.each([
+    ['timeoutMs', { timeoutMs: 0 }],
+    ['sessionTokenTtlMs', { sessionTokenTtlMs: Number.POSITIVE_INFINITY }],
+  ])('rejects invalid %s overrides before wiring the gateway', (_name: string, config) => {
+    expect(() => createGovernor({
+      readline: makeReadline(['a']),
+      memoryPort: makeMemoryPort(),
+      config,
+    })).toThrow(ApprovalConfigurationError);
   });
 });
