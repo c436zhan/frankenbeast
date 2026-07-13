@@ -1,5 +1,64 @@
 # Changelog
 
+## [0.43.0](https://github.com/djm204/frankenbeast/compare/@franken/orchestrator-v0.42.3...@franken/orchestrator-v0.43.0) (2026-07-13)
+
+
+### Features
+
+* **comms:** add delivery sensitivity policy ([#2037](https://github.com/djm204/frankenbeast/issues/2037)) ([cf0c945](https://github.com/djm204/frankenbeast/commit/cf0c94552c79bbb2f80ca27f72c2116217eb2f6c))
+* **learning:** add PM handoff quality rubric ([#1990](https://github.com/djm204/frankenbeast/issues/1990)) ([cfa52f2](https://github.com/djm204/frankenbeast/commit/cfa52f24bb9b4f6d467f7ca2388fe972aa09aef8))
+
+
+### Bug Fixes
+
+* **orchestrator:** accept common interview approvals ([#1918](https://github.com/djm204/frankenbeast/issues/1918)) ([4e2770d](https://github.com/djm204/frankenbeast/commit/4e2770d3d506d1e9313ee5af5b07f30c361a0185))
+* **orchestrator:** align Gemini API key availability ([#2061](https://github.com/djm204/frankenbeast/issues/2061)) ([ceead42](https://github.com/djm204/frankenbeast/commit/ceead4220edd4155c0bf2070875732c70ae79300))
+* **orchestrator:** allow global flags before subcommand ([b4a996f](https://github.com/djm204/frankenbeast/commit/b4a996fd231fec667ccdadb2182a5fc94ae5572b)), closes [#1902](https://github.com/djm204/frankenbeast/issues/1902)
+* **orchestrator:** cap context snapshot imports ([#1964](https://github.com/djm204/frankenbeast/issues/1964)) ([03f2559](https://github.com/djm204/frankenbeast/commit/03f2559d1cba29b5b690f8e8b9c9992c067ad7c0))
+* **orchestrator:** clear approval metadata in response ([23c4cd2](https://github.com/djm204/frankenbeast/commit/23c4cd2fcb271654728494f157be6cf8905ef0f9))
+* **orchestrator:** close beast attempt cleanup issue ([#2003](https://github.com/djm204/frankenbeast/issues/2003)) ([ae34c42](https://github.com/djm204/frankenbeast/commit/ae34c42ecba98db09aa5b43c097d8ecf0819170e))
+* **orchestrator:** cover 1Password keys with symbols ([#1997](https://github.com/djm204/frankenbeast/issues/1997)) ([e3d1ed7](https://github.com/djm204/frankenbeast/commit/e3d1ed7bbff2d78797c5de8ba18caef2b634f4f9)), closes [#1950](https://github.com/djm204/frankenbeast/issues/1950)
+* **orchestrator:** escape Windows keychain targets ([c25ee1d](https://github.com/djm204/frankenbeast/commit/c25ee1d3ed765d8cadf838586e90f8d6c07f6ec9))
+* **orchestrator:** handle invalid init JSON ([#1621](https://github.com/djm204/frankenbeast/issues/1621)) ([b64be91](https://github.com/djm204/frankenbeast/commit/b64be91e667054dbdc6023c155528b681d791716))
+* **orchestrator:** harden analytics filter inputs ([426fb83](https://github.com/djm204/frankenbeast/commit/426fb8327e6bfad859058c730b6f42a9724ff1dd)), closes [#1799](https://github.com/djm204/frankenbeast/issues/1799)
+* **orchestrator:** harden approval command replay ([#1915](https://github.com/djm204/frankenbeast/issues/1915)) ([af07a0d](https://github.com/djm204/frankenbeast/commit/af07a0d973cf7470665186549b49b284b71a397c))
+* **orchestrator:** harden browser control cookie mutations ([#1959](https://github.com/djm204/frankenbeast/issues/1959)) ([e63df06](https://github.com/djm204/frankenbeast/commit/e63df068734089145fb8c9b371899d73599eeb04))
+* **orchestrator:** harden cleanup symlink handling ([#1927](https://github.com/djm204/frankenbeast/issues/1927)) ([de6a322](https://github.com/djm204/frankenbeast/commit/de6a3227a9a41dd134b465e0dc9b710d64a1ae57))
+* **orchestrator:** isolate chat runtime continuation by session ([#1996](https://github.com/djm204/frankenbeast/issues/1996)) ([befc35f](https://github.com/djm204/frankenbeast/commit/befc35f3be15887983c738eea2b3e4b0150f3808))
+* **orchestrator:** normalize workspace root patterns ([6db7a05](https://github.com/djm204/frankenbeast/commit/6db7a0556eaf98be8a0bfbf52d27e53919589611)), closes [#1953](https://github.com/djm204/frankenbeast/issues/1953)
+* **orchestrator:** parse unnumbered interview questions ([512d61f](https://github.com/djm204/frankenbeast/commit/512d61f42a8f184f3cb5724b5439adc9eefaeaf9)), closes [#1899](https://github.com/djm204/frankenbeast/issues/1899)
+* **orchestrator:** redact secret-like logger metadata ([b16ba4a](https://github.com/djm204/frankenbeast/commit/b16ba4ab7c0219267e44eb15ed4350738d4418c2)), closes [#1801](https://github.com/djm204/frankenbeast/issues/1801)
+* **orchestrator:** reject extra CLI positionals ([5e79de8](https://github.com/djm204/frankenbeast/commit/5e79de8bfcf6231a19693495f95dfd0e017fd480))
+* **orchestrator:** reject stale approval chat input ([#1971](https://github.com/djm204/frankenbeast/issues/1971)) ([9350e11](https://github.com/djm204/frankenbeast/commit/9350e110c3a23b79f96e7de4a1bf23393938baf8))
+* **orchestrator:** require beasts action for mode flag ([#2000](https://github.com/djm204/frankenbeast/issues/2000)) ([f86a71d](https://github.com/djm204/frankenbeast/commit/f86a71ddb6b27c38486606ab349b36144bdc5783))
+* **orchestrator:** require review for new runtime tools ([50f268b](https://github.com/djm204/frankenbeast/commit/50f268b567b10e53a2cd4ce2903a0c99303508bb))
+* **orchestrator:** route comms reject actions through slash command ([41a5286](https://github.com/djm204/frankenbeast/commit/41a5286bce985053a43d22bbf170c9289bd42982))
+* **orchestrator:** support managed chat rejection ([#1936](https://github.com/djm204/frankenbeast/issues/1936)) ([0552f23](https://github.com/djm204/frankenbeast/commit/0552f2374303c900f311162b699b99d2002c99b3))
+* **orchestrator:** treat empty issue filters as no-op ([840690b](https://github.com/djm204/frankenbeast/commit/840690b84ef52b798dd0a2d94064d3cbb8c054f1)), closes [#2020](https://github.com/djm204/frankenbeast/issues/2020)
+* **orchestrator:** wrap malformed run config JSON errors ([#1934](https://github.com/djm204/frankenbeast/issues/1934)) ([fed08f3](https://github.com/djm204/frankenbeast/commit/fed08f386a798eff14a6a7f82535237e013083ba))
+* **security:** harden token comparisons ([#1961](https://github.com/djm204/frankenbeast/issues/1961)) ([82321ea](https://github.com/djm204/frankenbeast/commit/82321eae757df4eb7b78fad07d5752689a5402f8))
+
+
+### Tests
+
+* **orchestrator:** cover Windows keychain target escaping ([b3170a3](https://github.com/djm204/frankenbeast/commit/b3170a3033973f8bdf3abd274dcf219e9a410e86)), closes [#1984](https://github.com/djm204/frankenbeast/issues/1984)
+* **orchestrator:** guard e2e test discovery ([#1981](https://github.com/djm204/frankenbeast/issues/1981)) ([970cd87](https://github.com/djm204/frankenbeast/commit/970cd876dc35686e666174f664e9cc056d29b239))
+* **orchestrator:** guard e2e zero-test discovery ([#1980](https://github.com/djm204/frankenbeast/issues/1980)) ([f8ca3da](https://github.com/djm204/frankenbeast/commit/f8ca3da95c037ffdd1ad355b254b30abb6235b49))
+* **orchestrator:** lint singular test fixtures ([90279f7](https://github.com/djm204/frankenbeast/commit/90279f7307e948a892c9ac3ee20590946b0e69af)), closes [#1977](https://github.com/djm204/frankenbeast/issues/1977)
+* **orchestrator:** stabilize http abort disconnect test ([1b66c04](https://github.com/djm204/frankenbeast/commit/1b66c04a1c1b92e34259521a9824662611cfdf65)), closes [#1932](https://github.com/djm204/frankenbeast/issues/1932)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @franken/critique bumped from 0.7.0 to 0.8.0
+    * @franken/governor bumped from 0.5.14 to 0.5.15
+    * @franken/types bumped from 0.9.0 to 0.9.1
+    * @franken/observer bumped from 0.7.16 to 0.7.17
+    * @franken/planner bumped from 0.4.14 to 0.4.15
+    * @franken/brain bumped from 0.7.5 to 0.7.6
+
 ## [0.42.3](https://github.com/djm204/frankenbeast/compare/@franken/orchestrator-v0.42.2...@franken/orchestrator-v0.42.3) (2026-07-11)
 
 

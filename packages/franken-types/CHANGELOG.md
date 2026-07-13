@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.9.1](https://github.com/djm204/frankenbeast/compare/franken-types-v0.9.0...franken-types-v0.9.1) (2026-07-13)
+
+
+### Bug Fixes
+
+* **orchestrator:** clear approval metadata in response ([23c4cd2](https://github.com/djm204/frankenbeast/commit/23c4cd2fcb271654728494f157be6cf8905ef0f9))
+* **orchestrator:** close beast attempt cleanup issue ([#2003](https://github.com/djm204/frankenbeast/issues/2003)) ([ae34c42](https://github.com/djm204/frankenbeast/commit/ae34c42ecba98db09aa5b43c097d8ecf0819170e))
+* **types:** harden archive extraction path containment ([#1988](https://github.com/djm204/frankenbeast/issues/1988)) ([c065d48](https://github.com/djm204/frankenbeast/commit/c065d48281bbd0d91994ae3b34b14cb5c799de5f)), closes [#1793](https://github.com/djm204/frankenbeast/issues/1793)
+* **types:** harden JSON pointer handling ([#1989](https://github.com/djm204/frankenbeast/issues/1989)) ([975239f](https://github.com/djm204/frankenbeast/commit/975239fc5396d75c11e7f5ce91c7ac09b1bfc4ac))
+
 ## [0.9.0](https://github.com/djm204/frankenbeast/compare/franken-types-v0.8.2...franken-types-v0.9.0) (2026-07-11)
 
 

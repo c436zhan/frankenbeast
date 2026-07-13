@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.4.15](https://github.com/djm204/frankenbeast/compare/@franken/planner-v0.4.14...@franken/planner-v0.4.15) (2026-07-13)
+
+
+### Bug Fixes
+
+* **orchestrator:** close beast attempt cleanup issue ([#2003](https://github.com/djm204/frankenbeast/issues/2003)) ([ae34c42](https://github.com/djm204/frankenbeast/commit/ae34c42ecba98db09aa5b43c097d8ecf0819170e))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @franken/types bumped from 0.9.0 to 0.9.1
+
 ## [0.4.14](https://github.com/djm204/frankenbeast/compare/@franken/planner-v0.4.13...@franken/planner-v0.4.14) (2026-07-11)
 
 

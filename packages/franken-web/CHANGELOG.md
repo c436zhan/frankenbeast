@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.2.7](https://github.com/djm204/frankenbeast/compare/franken-web-v0.2.6...franken-web-v0.2.7) (2026-07-13)
+
+
+### Bug Fixes
+
+* **orchestrator:** close beast attempt cleanup issue ([#2003](https://github.com/djm204/frankenbeast/issues/2003)) ([ae34c42](https://github.com/djm204/frankenbeast/commit/ae34c42ecba98db09aa5b43c097d8ecf0819170e))
+* **web:** reject path traversal during normalization ([482cf54](https://github.com/djm204/frankenbeast/commit/482cf543cd579c23c0da157b910c5012365de069)), closes [#1792](https://github.com/djm204/frankenbeast/issues/1792)
+* **web:** restrict untrusted markdown attachments ([#2017](https://github.com/djm204/frankenbeast/issues/2017)) ([a0aa90e](https://github.com/djm204/frankenbeast/commit/a0aa90e937376375e5fee8cb121fe73c43111dcb))
+* **web:** surface dashboard stream reconnect failures ([54edd90](https://github.com/djm204/frankenbeast/commit/54edd90b3f47e3038d15ef0f87c16db8d8ba0c5b)), closes [#2034](https://github.com/djm204/frankenbeast/issues/2034)
+
+
+### Documentation
+
+* **web:** clarify dashboard backend proxy env vars ([#2028](https://github.com/djm204/frankenbeast/issues/2028)) ([171c79d](https://github.com/djm204/frankenbeast/commit/171c79d6943bb8a1d32514a1165b0d5fac2eacf4))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @franken/types bumped from 0.9.0 to 0.9.1
+
 ## [0.2.6](https://github.com/djm204/frankenbeast/compare/franken-web-v0.2.5...franken-web-v0.2.6) (2026-07-11)
 
 

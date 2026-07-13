@@ -1,5 +1,28 @@
 # Changelog
 
+## [0.7.17](https://github.com/djm204/frankenbeast/compare/franken-observer-v0.7.16...franken-observer-v0.7.17) (2026-07-13)
+
+
+### Bug Fixes
+
+* **observer:** enforce webhook target allowlist ([0055ddb](https://github.com/djm204/frankenbeast/commit/0055ddba117a7fafcc07e68b4b374cf60dee8ef6))
+* **observer:** validate webhook retry counts ([f8ab30d](https://github.com/djm204/frankenbeast/commit/f8ab30d90cb0e69f16886c37fb211e5ea6086a57)), closes [#2015](https://github.com/djm204/frankenbeast/issues/2015)
+* **orchestrator:** close beast attempt cleanup issue ([#2003](https://github.com/djm204/frankenbeast/issues/2003)) ([ae34c42](https://github.com/djm204/frankenbeast/commit/ae34c42ecba98db09aa5b43c097d8ecf0819170e))
+
+
+### Tests
+
+* **observer:** assert invalid replay refs skip blob reads ([#2054](https://github.com/djm204/frankenbeast/issues/2054)) ([ad36aea](https://github.com/djm204/frankenbeast/commit/ad36aea28093cb4342b0357dce69bd68862d9d88)), closes [#2052](https://github.com/djm204/frankenbeast/issues/2052)
+* **observer:** cover missing audit hash content ([#2053](https://github.com/djm204/frankenbeast/issues/2053)) ([bb0064f](https://github.com/djm204/frankenbeast/commit/bb0064fd1e991ebefb0fd4d64b412f3f6292b3a0)), closes [#2048](https://github.com/djm204/frankenbeast/issues/2048)
+* **observer:** isolate eval suite discovery ([#1972](https://github.com/djm204/frankenbeast/issues/1972)) ([19b217f](https://github.com/djm204/frankenbeast/commit/19b217f1784fa469ed7cd91488fda831f5299607)), closes [#1962](https://github.com/djm204/frankenbeast/issues/1962)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @franken/types bumped from 0.9.0 to 0.9.1
+
 ## [0.7.16](https://github.com/djm204/frankenbeast/compare/franken-observer-v0.7.15...franken-observer-v0.7.16) (2026-07-11)
 
 
